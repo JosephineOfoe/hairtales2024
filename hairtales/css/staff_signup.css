@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive; /* Use the Indie Flower font */
+    font-size: x-large;
+    background-image: url('../images/staff_img.jpg'); /* Replace 'background.jpg' with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Move the background image to the left */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.staff-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency to form background */
+    padding: 20px; /* Increase top padding to create space for the <h2> element and the beginning of the form */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-top: 100px; /* Adjust margin-top to bring the form container down */
+}
+
+h2 {
+    position: relative;
+    margin-top: 10px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+}
+
+.entries {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"].first {
+    position: relative; 
+    padding: 8px 10px 8px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120%;
+    width: 49%;
+    left: -2px;
+    bottom: 10px;
+}
+
+input[type="text"].second {
+    position: relative;
+    padding: 8px 10px 8px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120%;
+    width: 49%;
+    right: -200px;
+    bottom: 50px;
+}
+
+input[type="tel"] {
+    position: relative;
+    padding: 8px 10px 8px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120%;
+    width: 99%;
+    bottom: 46px;
+}
+
+input[type="email"] {
+    position: relative; 
+    padding: 8px 10px 8px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120%;
+    width: 99%;
+    bottom: 42px;
+}
+
+input[type="password"] {
+    position: relative; 
+    padding: 8px 10px 8px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 120%;
+    width: 99%;
+    bottom: 38px
+}
+
+label[for="confirm_password"] {
+    margin-top: 6px; /* Adjust the value as needed */
+}
+
+label[for="dob"] {
+    display: block;
+    margin-top: -30px; /* Adjust the value as needed */
+    text-align: left; /* Align the text to the left */
+    margin-left: 10px;
+}
+
+input[type="date"] {
+    padding: 8px 10px 8px 40px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #f5f5f5; /* Set background color */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Set text color */
+    width: 99%; /* Set width to fill its container */
+    height: 110%;
+    box-sizing: border-box; /* Include padding and border in the width */
+    /* Add any additional styles as needed */
+}
+
+.fa-user {
+    position: absolute;
+    left: 30px; /* Adjust as needed */
+    top: 21%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-user-alt {
+    position: absolute;
+    right: 185px; /* Adjust as needed */
+    top: 21%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-phone {
+    position: absolute;
+    left: 30px; /* Adjust as needed */
+    top: 28.5%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-envelope {
+    position: absolute;
+    left: 30px; /* Adjust as needed */
+    top: 36%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-lock {
+    position: absolute;
+    left: 30px; /* Adjust as needed */
+    top: 43.5%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-lock.confirm {
+    position: absolute;
+    left: 30px; /* Adjust as needed */
+    top: 51.5%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-calender {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 43%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+#gen {
+    margin-right: 20px;
+}
+
+.gender-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+#male {
+    margin-right: 10px; /* Add spacing between male radio button and female label */
+    margin-left: 10px;
+}
+
+.female {
+    margin-left: 10px; /* Add spacing between male radio button and female label */
+}
+
+button {
+    width: 99%; /* Adjust the width as needed */
+    height: 120%;
+    padding: 10px; /* Add padding to improve button appearance */
+    background-color: #9b5b22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #3c2008;
+}

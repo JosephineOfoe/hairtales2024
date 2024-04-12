@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive; /* Use the Indie Flower font */
+    font-size: x-large;
+    background-image: url('../images/booking_bg.jpg'); /* Replace 'background.jpg' with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Move the background image to the left */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency to form background */
+    padding: 10px; /* Increase top padding to create space for the <h2> element and the beginning of the form */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    position: relative;
+    margin-top: 10px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+}
+
+.form-group {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="time"],
+button {
+    width: 99%;
+    height: 120%;
+    padding: 8px 10px 8px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.fa-user {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 31%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-cogs {
+    position: absolute;
+    left: 20px;
+    top: 42%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-calendar-alt {
+    position: absolute;
+    left: 20px;
+    top: 52%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-clock.start-time{
+    position: absolute;
+    left: 20px;
+    top: 62.5%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+.fa-clock.end-time{
+    position: absolute;
+    left: 20px;
+    top: 73.5%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+button {
+    width: 99%; /* Adjust the width as needed */
+    height: 120%;
+    padding: 10px; /* Add padding to improve button appearance */
+    background-color: #9b5b22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+button:hover {
+    background-color: #3c2008;
+}

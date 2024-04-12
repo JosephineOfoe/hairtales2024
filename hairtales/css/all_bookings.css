@@ -1,0 +1,67 @@
+ /* Add your CSS styling here or include an external CSS file */
+ body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.user-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 10px; /* Adjust padding as needed */
+        background-color: #fff; /* Background color for better visibility */
+        border: 1px solid #ccc; /* Border for better visibility */
+        border-radius: 5px; /* Rounded corners for better appearance */
+        z-index: 1000; /* Ensure the user container is above other content */
+        }
+
+        .fa-user-circle {
+        color: black; /* Adjust color as needed */
+        margin-right: 5px; /* Adjust margin as needed */
+        }
+
+        .user-name {
+        color: black; /* Adjust color as needed */
+        }
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative; /* Position relative for absolute positioning of delete icon */
+}
+
+.booking p {
+    margin: 0;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #ff0000; /* Red color for delete icon */
+    cursor: pointer;
+}
